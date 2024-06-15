@@ -1,17 +1,17 @@
-# team000-sample
+# team015-queryur
 
 ## Basic Information
 
 |   Info      |        Description     |
 | ----------- | ---------------------- |
-| TeamID      |        Team-000        |
-| TeamName    |         sample         |
-| Captain     |       Abdu Alawini     |
-| Captain     |  alawini@illinois.edu  |
-| Member1     |        Lahari Anne       |
-| Member1     |   lanne2@illinois.edu  |
-| Member2     |                        |
-| Member2     |                        |
+| TeamID      |        Team-015        |
+| TeamName    |         queryur        |
+| Captain     |       Jae Min Sim      |
+| Captain     |   jmsim2@illinois.edu  |
+| Member1     |        Kosuke Ito      |
+| Member1     |  kosukei2@illinois.edu |
+| Member2     |       Kevin Zhou       |
+| Member2     |  kevinz2@illinois.edu  |
 | Member3     |                        |
 | Member3     |                        |
 
