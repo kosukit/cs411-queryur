@@ -11,7 +11,7 @@
 | Member1     |        Kosuke Ito      |
 | Member1     |  kosukei2@illinois.edu |
 | Member2     |       Kevin Zhou       |
-| Member2     |  kevinz2@illinois.edu  |
+| Member2     | kevinz12@illinois.edu  |
 | Member3     |     Eklavya Tyagi      |
 | Member3     |  etyagi2@illinois.edu  |
 
