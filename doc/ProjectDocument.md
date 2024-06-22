@@ -1,7 +1,7 @@
 # Title: College Meal Nutrition Planner  
 
 # Project Summary
-We plan to create an application where students can create and share their recipes, input their ingredients, and track the nutritional content of their meals. The app will provide dietary recommendations and community features to make it more engaging than existing solutions offered by existing applications that help track nutrition. The application targets college students who are not experienced in cooking and need better nutritional choices. The app will help college students learn easy and nutritious recipes while keeping track of their nutrients.
+We plan to create an application where students can create and share their recipes, input their ingredients, and track the nutritional content of their meals from the information provided. The app will provide dietary recommendations and community features to make it more engaging than existing solutions offered by existing applications that help track nutrition. The application targets college students who are not experienced in cooking and need better nutritional choices. The app will help college students learn easy and nutritious recipes while keeping track of their nutrients.
 # Description of Application
 Application Purpose: The application will serve as a comprehensive tool for college students to manage their dietary habits by allowing them to create, try out, and share recipes, track nutritional intake, and receive personalized dietary recommendations.
 
@@ -17,7 +17,7 @@ Similar Applications: While similar to MyFitnessPal in tracking nutrition, this 
 # Description of Your Data Sources (Realness)
 Online Data Sources: Gather nutritional data from the USDA Food Composition Databases and allow users to input their ingredient data. Ensure data accuracy and regular updates.
 
-User-Generated Sources: User-generated content created by group members can be used to test out the application and check whether it gives the correct suggestions. 
+User-Generated Sources: User-generated recipes created by group members can be used to test out the application and check whether it gives the correct suggestions. 
 # Functionality Description of Your Application
 Recipes: The user will be able to create, share, and view recipes. This will allow the users to be able to learn to cook easy healthy meals and also share the different health tips they have learned. 
 
@@ -28,7 +28,7 @@ Suggestions: Users will be suggested their dietary situation and also will be gi
 <img width="591" alt="image" src="https://github.com/cs411-alawini/su24-cs411-team015-queryur/assets/130335562/e16a74f3-5e50-44e2-b28b-c9603a160b3a">
 
 # Project Work Distribution
-Backend Development: Responsible for user authentication, data management, API integration, and machine learning model implementation.
+Backend Development: Responsible for user authentication, data management, API integration.
 
 Frontend Development: Responsible for UI/UX design and implementation, ensuring a responsive and user-friendly interface.
 
