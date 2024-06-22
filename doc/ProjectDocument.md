@@ -9,7 +9,7 @@ Problem: Many students face adversity in keeping a healthy diet after coming to 
 
 Technically Challenging Function: Implementing a nutrition analysis functionality that evaluates user-generated recipes and provides personalized dietary recommendations and recipes based on the student's nutritional goals.
 # Usefulness Description of Your Application
-Why Useful: This application will support students looking to improve their dietary habits, promoting better health and well-being. It will offer insights into the nutritional value of user-generated recipes and help students make informed food choices.
+Why Useful: This application will support students looking to improve their dietary habits, promoting better health and well-being. It will offer insights into the nutritional value of user-generated recipes and help students make better-informed food choices.
 
 Basic Functions: Users can create and share recipes, input ingredients, track their nutritional intake, and receive personalized dietary recommendations. Community features will allow users to share recipes.
 
@@ -17,7 +17,7 @@ Similar Applications: While similar to MyFitnessPal in tracking nutrition, this 
 # Description of Your Data Sources (Realness)
 Online Data Sources: Gather nutritional data from the USDA Food Composition Databases and allow users to input their ingredient data. Ensure data accuracy and regular updates.
 
-User-Generated Sources: User-generated recipes created by group members can be used to test out the application and check whether it gives the correct suggestions. 
+User-Generated Sources: User-generated recipes created by group members can be used to test out the application and check whether it gives the correct suggestions. Online sources for recipes can also be used to test out application if needed.
 # Functionality Description of Your Application
 Recipes: The user will be able to create, share, and view recipes. This will allow the users to be able to learn to cook easy healthy meals and also share the different health tips they have learned. 
 
