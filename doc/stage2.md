@@ -21,7 +21,7 @@
 
 ### Ingredient
 - **Attributes**: `ingredient_id` (primary key), `ingredient_name`,  `fiber`, `calories`, `potassium`, `carbs`, `fat`, `sodium`, `sugar`, `vitamin_d`, `calcium`, `iron`.
-- Contains nutritional information for each ingredient with predefined units to define the unit amount.
+- Contains nutritional information for each ingredient with predefined units to define the unit amount. Information from USDA Food Composition Database CSV (https://fdc.nal.usda.gov/download-datasets.html).
 
 ### RecipeIngredients
 - **Attributes**: `recipeIngredients_id` (primary key), `recipe_id` (foreign key), `ingredient_id` (foreign key), `amount`, `units`.
