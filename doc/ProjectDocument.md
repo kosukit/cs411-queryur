@@ -7,7 +7,7 @@ Application Purpose: The application will serve as a comprehensive tool for coll
 
 Problem: Many students face adversity in keeping a healthy diet after coming to college because it is complicated and there are other more convenient unhealthy substitutes available for them. 
 
-Technically Challenging Function: Implementing a nutrition analysis functionality that evaluates user-generated recipes and provides personalized dietary recommendations and recipes based on the student's nutritional goals.
+Technically Challenging Function: Implementing a nutrition analysis functionality that evaluates user-generated recipes and provides personalized dietary recommendations and recipes based on the student's nutritional goals. WIll compare estimated nutritional data from user-generated recipes to requirements data for user to come up with recommendations.
 # Usefulness Description of Your Application
 Why Useful: This application will support students looking to improve their dietary habits, promoting better health and well-being. It will offer insights into the nutritional value of user-generated recipes and help students make better-informed food choices.
 
@@ -15,7 +15,7 @@ Basic Functions: Users can create and share recipes, input ingredients, track th
 
 Similar Applications: While similar to MyFitnessPal in tracking nutrition, this application differentiates itself by focusing on user-generated recipes, community engagement, and personalized dietary advice tailored for college students.
 # Description of Your Data Sources (Realness)
-Online Data Sources: Gather nutritional data from the USDA Food Composition Databases and allow users to input their ingredient data. Ensure data accuracy and regular updates.
+Online Data Sources: Nutritional data from the USDA Food Composition Databases (information [https://fdc.nal.usda.gov/api-guide.html](https://fdc.nal.usda.gov/download-datasets.html), data in CSV) and allow users to input their ingredient data for individual recipes.
 
 User-Generated Sources: User-generated recipes created by group members can be used to test out the application and check whether it gives the correct suggestions. Online sources for recipes can also be used to test out application if needed.
 # Functionality Description of Your Application
