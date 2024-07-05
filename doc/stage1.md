@@ -25,7 +25,7 @@
 
   ## Relationships
 - A **Student** can create many **Recipes** (1-to-many).
-- A **Recipe** belongs to one **Category** (many-to-1).
+- A **Category** can have many **Recipes** (1-to-many).
 - A **Student** has one set of **NutritionNeeds** (1-to-1).
 - A **Recipe** can have many **RecipeIngredients** (1-to-many).
 - An **Ingredient** can be used in many **RecipeIngredients** (1-to-many).
