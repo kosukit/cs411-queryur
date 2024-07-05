@@ -5,7 +5,7 @@
 
 ### Recipe
 - **Attributes**: `recipe_id` (primary key), `email` (foreign key), `category_id` (foreign key), `recipe_name`, `instructions`, `cook_mins`, `img_url`.
-- Each recipe is created by a student and can belong to multiple categories.
+- Each recipe is created by a student, and basic information about the recipe is stored here.
 
 ### Category
 - **Attributes**: `category_id` (primary key), `category_name`, `genre`.
