@@ -36,12 +36,12 @@
 
 ## BCNF Normalization
 ### Definition: For every relationship X→Y, X should be a superkey for relation R.
-- **Student**: `email` is a superkey
-- **Recipe**: `recipe_id` is a superkey
-- **Category**: `category_id` is a superkey
-- **NutritionNeeds**: `email` is a superkey
-- **Ingredient**: `ingredient_id` is a superkey
-- **RecipeIngredients**: `recipeIngredients_id` is a superkey
+- **Student**: `email` is a primary key and superkey.
+- **Recipe**: `recipe_id` is a primary key superkey.
+- **Category**: `category_id` is a primary key and superkey.
+- **NutritionNeeds**: `email` is a primary key and superkey.
+- **Ingredient**: `ingredient_id` is a superkey.
+- **RecipeIngredients**: `recipeIngredients_id` is a superkey. (`recipe_id`,`ingredient_id`) is also a candidate key that uniquely identifies each row.
 
 ## Relational Schema
 - **Student**(`email`: VARCHAR [PK], `first_name`: VARCHAR, `last_name`: VARCHAR, `password`: VARCHAR)
