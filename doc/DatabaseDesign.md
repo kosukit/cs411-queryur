@@ -1,7 +1,7 @@
 # Database Implementation & Indexing
 
 ## Part I: Database Implementation
-
+```SQL
 CREATE TABLE Student(
 email VARCHAR(255) PRIMARY KEY,
 first_name VARCHAR(255),
@@ -69,5 +69,9 @@ units VARCHAR(50),
 FOREIGN KEY (ingredient_id) REFERENCES Ingredient(ingredient_id),
 FOREIGN KEY (recipe_id) REFERENCES Recipe(recipe_id)
 );
+```
+
+![showDatabases](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/stage3%20databasedump/showDatabases.png)
+![showTables](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/stage3%20databasedump/showTables.png)
 
 ## Part II: Indexing
