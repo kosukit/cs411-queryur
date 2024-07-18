@@ -47,18 +47,12 @@ async function getdishlessthan500cal(){
     r.recipe_id, 
     r.recipe_name, 
     SUM(i.calories) AS total_calories
-FROM 
-    Recipe r
-JOIN 
-    Category c ON r.category_id = c.category_id
-JOIN 
-    RecipeIngredients ri ON r.recipe_id = ri.recipe_id
-JOIN 
-    Ingredient i ON ri.ingredient_id = i.ingredient_id
-GROUP BY 
-    r.recipe_id, r.recipe_name
-HAVING 
-    total_calories < 500;
+FROM Recipe r
+JOIN Category c ON r.category_id = c.category_id
+JOIN RecipeIngredients ri ON r.recipe_id = ri.recipe_id
+JOIN Ingredient i ON ri.ingredient_id = i.ingredient_id
+GROUP BY r.recipe_id, r.recipe_name
+HAVING total_calories < 500;
 `);
     const rows = result[0];
     return rows;
@@ -71,18 +65,12 @@ async function getdishlessthancal(cal){
     r.recipe_id, 
     r.recipe_name, 
     SUM(i.calories) AS total_calories
-FROM 
-    Recipe r
-JOIN 
-    Category c ON r.category_id = c.category_id
-JOIN 
-    RecipeIngredients ri ON r.recipe_id = ri.recipe_id
-JOIN 
-    Ingredient i ON ri.ingredient_id = i.ingredient_id
-GROUP BY 
-    r.recipe_id, r.recipe_name
-HAVING 
-    total_calories < ?;
+FROM Recipe r
+JOIN Category c ON r.category_id = c.category_id
+JOIN RecipeIngredients ri ON r.recipe_id = ri.recipe_id
+JOIN Ingredient i ON ri.ingredient_id = i.ingredient_id
+GROUP BY r.recipe_id, r.recipe_name
+HAVING total_calories < ?;
 `,[cal]);
     const rows = result[0];
     return rows;
