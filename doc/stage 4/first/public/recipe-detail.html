@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .recipe-image{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .ingredient-table .nutrition-table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .ingredient-table th, .ingredient-table td .nutrition-table th, .nutrition-table td{
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .ingredient-table th .nutrition-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="recipe-name"></h1>
+    <img id="recipe-image"  class="recipe-image" src="" alt="Recipe Image">
+    <p id="instructions"></p>
+    <p id="cook-time"></p>
+
+    <!-- Ingredients block 
+    <h2>Ingredients</h2>
+    <table class="ingredient-table">
+        <thead>
+            <tr>
+                <th>Ingredient</th>
+                <th>Amount</th>
+                <th>Units</th>
+                <th>Calories</th>
+                <th>Fiber</th>
+                <th>Carbohydrates</th>
+                <th>Fat</th>
+                <th>Saturated Fat</th>
+                <th>Sodium</th>
+                <th>Sugar</th>
+                <th>Vitamin D</th>
+                <th>Calcium</th>
+                <th>Iron</th>
+                <th>Potassium</th>
+            </tr>
+        </thead>
+        <tbody id="ingredient-list">
+        </tbody>
+    </table>
+    -->
+    <h2>Nutrition Summary</h2>
+
+
+    <table class ="nutrition-table">
+        <tbody>
+            <tr>
+                <td>Calories</td>
+                <td id="total-calories"></td>
+                <td>cal</td>
+            </tr>
+            <tr>
+                <td>Fiber</td>
+                <td  id="total-fiber"></td>
+                <td>g</td>
+            </tr>
+            <tr>
+                <td>Carbohydrates</td>
+                <td id="total-carbohydrates"></td>
+                <td>g</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td id="total-fat"></td>
+                <td>g</td>
+            </tr>
+            <tr>
+                <td>Saturated Fat</td>
+                <td id="total-saturated-fat"></td>
+                <td>g</td>
+            </tr>
+            <tr>
+                <td>Sodium</td>
+                <td id="total-sodium"></td>
+                <td>mg</td>
+            </tr>
+            <tr>
+                <td>Sugar</td>
+                <td id="total-sugar"></td>
+                <td>g</td>
+            </tr>
+            <tr>
+                <td>Vitamin D</td>
+                <td id="total-vitamin-d"></td>
+                <td>IU</td>
+            </tr>
+            <tr>
+                <td>Calcium</td>
+                <td id="total-calcium"></td>
+                <td>mg</td>
+            </tr>
+            <tr>
+                <td>Iron</td>
+                <td  id="total-iron"></td>
+                <td>mg</td>
+            </tr>
+            <tr>
+                <td>Potassium</td>
+                <td id="total-potassium"></td>
+                <td>mg</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/recipes">go back</a>
+
+    <script>
+        const recipeId = window.location.pathname.split('/').pop();
+        //json file
+        fetch(`/recipe/${recipeId}`)
+            .then(response => response.json())
+            .then(recipe => {
+                //get recipe table
+                console.log(recipe); // Debug
+                document.getElementById('recipe-name').textContent = recipe.recipe_name;
+                document.getElementById('recipe-image').src = '/' + recipe.img_url || 'images/placeholder.jpg';
+                document.getElementById('instructions').textContent = recipe.instructions;
+                document.getElementById('cook-time').textContent = `Cook time: ${recipe.cook_mins} minutes`;
+
+                //get ingredient table
+                /*
+                const ingredientList = document.getElementById('ingredient-list');
+                recipe.ingredients.forEach(ingredient => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${ingredient.ingredient_name}</td>
+                        <td>${ingredient.amount}</td>
+                        <td>${ingredient.units}</td>
+                        <td>${ingredient.Calories}</td>
+                        <td>${ingredient.fiber}</td>
+                        <td>${ingredient.Carbohydrates}</td>
+                        <td>${ingredient.fat}</td>
+                        <td>${ingredient.Saturated_Fat}</td>
+                        <td>${ingredient.Sodium}</td>
+                        <td>${ingredient.Sugar}</td>
+                        <td>${ingredient.vitamin_d}</td>
+                        <td>${ingredient.Calcium}</td>
+                        <td>${ingredient.Iron}</td>
+                        <td>${ingredient.Potassium}</td>
+                    `;
+                    ingredientList.appendChild(row);
+                });
+                */
+                
+                //get total_nutrition info
+                if (recipe.total_nutrition){
+                    document.getElementById('total-calories').textContent = recipe.total_nutrition.total_calorie;
+                    document.getElementById('total-fiber').textContent = recipe.total_nutrition.total_fiber;
+                    document.getElementById('total-carbohydrates').textContent = recipe.total_nutrition.total_carbohydrates;
+                    document.getElementById('total-fat').textContent = recipe.total_nutrition.total_fat;
+                    document.getElementById('total-saturated-fat').textContent = recipe.total_nutrition.total_saturated_fat;
+                    document.getElementById('total-sodium').textContent = recipe.total_nutrition.total_sodium;
+                    document.getElementById('total-sugar').textContent = recipe.total_nutrition.total_sugar;
+                    document.getElementById('total-vitamin-d').textContent = recipe.total_nutrition.total_vitamin_d;
+                    document.getElementById('total-calcium').textContent = recipe.total_nutrition.total_calcium;
+                    document.getElementById('total-iron').textContent = recipe.total_nutrition.total_iron;
+                    document.getElementById('total-potassium').textContent = recipe.total_nutrition.total_potassium;
+                }
+            })
+            .catch(error => console.error('Error fetching recipe:', error));
+    </script>
+</body>
+</html>

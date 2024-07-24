@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .recipe-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="recipe-name"></h1>
+    <img id="recipe-image" class="recipe-image" src="" alt="Recipe Image">
+    <p id="instructions"></p>
+    <p id="cook-time"></p>
+
+    <script>
+        const recipeId = window.location.pathname.split('/').pop();
+        fetch(`/recipe/${recipeId}`)
+            .then(response => response.json())
+            .then(recipe => {
+                console.log(recipe); // Debugging: Log fetched recipe data
+                document.getElementById('recipe-name').textContent = recipe.recipe_name;
+                document.getElementById('recipe-image').src = recipe.img_url || 'images/placeholder.jpg';
+                document.getElementById('instructions').textContent = recipe.instructions;
+                document.getElementById('cook-time').textContent = `Cook time: ${recipe.cook_mins} minutes`;
+            })
+            .catch(error => console.error('Error fetching recipe:', error));
+    </script>
+</body>
+</html>

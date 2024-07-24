@@ -1,0 +1,5 @@
+this is the first version of our project. all code is done through vs code and mysql workbench locally.
+this verison includes home page, login, signup, all recipe page with a search bar, a recipe detail page for each,
+and add recipe page. to access this, have your database set up as in sql dump, change database.js to your password,
+and run node app.js. this is not the final version, this will be imporve by better html styling, more data, and 
+featuring the NutritionNeeds table.
