@@ -73,5 +73,8 @@ FOREIGN KEY (recipe_id) REFERENCES Recipe(recipe_id)
 
 ![showDatabases](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/stage3%20databasedump/showDatabases.png)
 ![showTables](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/stage3%20databasedump/showTables.png)
+### Data Insertion
+![countIngredient](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/countIngredient.png)
+![countCategory](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/categoryCount.png)
 
 ## Part II: Indexing
