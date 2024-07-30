@@ -11,16 +11,16 @@ password VARCHAR(255)
 
 CREATE TABLE NutritionNeeds(
 email VARCHAR(255),
-Calories INT,
-fiber INT,
-Carbohydrates INT,
-fat INT,
-Sodium INT,
-Sugar INT,
-vitamin_d INT,
-Calcium INT,
-Iron INT,
-Potassium INT,
+Calories FLOAT,
+fiber FLOAT,
+Carbohydrates FLOAT,
+fat FLOAT,
+Sodium FLOAT,
+Sugar FLOAT,
+vitamin_d FLOAT,
+Calcium FLOAT,
+Iron FLOAT,
+Potassium FLOAT,
 PRIMARY KEY (email),
 FOREIGN KEY (email) REFERENCES Student(email)
 );
