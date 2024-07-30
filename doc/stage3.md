@@ -74,7 +74,12 @@ FOREIGN KEY (recipe_id) REFERENCES Recipe(recipe_id)
 ![showDatabases](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/stage3%20databasedump/showDatabases.png)
 ![showTables](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/stage3%20databasedump/showTables.png)
 ### Data Insertion
-![countIngredient](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/countIngredient.png)
-![countCategory](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/categoryCount.png)
+![countIngredient](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/imgs/countIngredient.png)
+![countCategory](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/imgs/categoryCount.png)
+### Advanced Queries
+![advanced1](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/imgs/advanced_1.png)
+![advanced2](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/imgs/advanced_2.png)
+![advanced3](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/imgs/advanced_3.png)
+![advanced4](https://github.com/cs411-alawini/su24-cs411-team015-queryur/blob/main/doc/imgs/advanced_4.png)
 
 ## Part II: Indexing
