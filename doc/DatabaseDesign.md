@@ -46,17 +46,17 @@ FOREIGN KEY (category_id) REFERENCES Category(category_id)
 
 CREATE TABLE Ingredient(
 ingredient_id INT PRIMARY KEY,
-Calories INT,
-fiber INT,
-Carbohydrates INT,
-fat INT,
-Saturated_Fat INT,
-Sodium INT,
-Sugar INT,
-vitamin_d INT,
-Calcium INT,
-Iron INT,
-Potassium INT,
+Calories FLOAT,
+fiber FLOAT,
+Carbohydrates FLOAT,
+fat FLOAT,
+Saturated_Fat FLOAT,
+Sodium FLOAT,
+Sugar FLOAT,
+vitamin_d FLOAT,
+Calcium FLOAT,
+Iron FLOAT,
+Potassium FLOAT,
 ingredient_name VARCHAR(255)
 );
 
